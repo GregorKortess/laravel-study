@@ -8,14 +8,22 @@ class Customer extends Model
 {
     protected $guarded = [];
 
+    public function getActiveAttribute($attribute)
+    {
+        return [
+            0 => 'Inactive',
+            1 => 'Active',
+        ][$attribute];
+    }
+
     public function scopeActive($query)
     {
-        return $query->where('active',1);
+        return $query->where('active', 1);
     }
 
     public function scopeInactive($query)
     {
-        return $query->where('active',0);
+        return $query->where('active', 0);
     }
 
     public function company()
