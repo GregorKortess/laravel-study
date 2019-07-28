@@ -15,7 +15,7 @@
             <form action="/customers" method="POST">
                 @include('customers.form')
 
-                <button type="submit" class="btn btn-default">Add customer</button>
+                <button type="submit" class="btn btn-outline-dark">Add customer</button>
 
             </form>
         </div>

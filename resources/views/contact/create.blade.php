@@ -3,8 +3,8 @@
 @section('title','Contact us')
 
 @section('content')
-
     @if( ! session()->has('message'))
+        <h1>Contact us</h1>
         <form action="{{ route('contact.store') }}" method="POST">
             <div  class="form-group">
                 <label for="name">Name</label>
