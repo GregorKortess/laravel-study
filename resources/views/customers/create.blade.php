@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class="col-12">
-            <form action="/customers" method="POST">
+            <form action="/customers" method="POST" enctype="multipart/form-data">
                 @include('customers.form')
 
                 <button type="submit" class="btn btn-outline-dark">Add customer</button>
