@@ -16,8 +16,6 @@ class EventServiceProvider extends ServiceProvider
     protected $listen = [
         NewCustomerHasRegisteredEvent::class => [
             \App\Listeners\WelcomeNewCustomerListener::class,
-            \App\Listeners\RegisterCustomerToNewsletter::class,
-            \App\Listeners\NotifyAdminViaSlack::class,
         ],
     ];
 
